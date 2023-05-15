@@ -10,6 +10,7 @@ Route::group([
     'prefix' => "auth"
 ], function ($router) {
     Route::post('login', [AuthController::class, 'login'])->name("login");
+    Route::post('admin', [AuthController::class, 'login'])->name("login");
     Route::post('register', [AuthController::class, 'register'])->name("register");
     Route::post('update', [AuthController::class, 'update']);
     Route::post('logout', [AuthController::class, 'logout']);
