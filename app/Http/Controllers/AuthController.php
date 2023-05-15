@@ -118,4 +118,9 @@ class AuthController extends Controller
         $user->save();
         return response()->json(['message' => 'Kullanıcı güncellendi'], 200);
     }
+
+    public function getAdminUser(){
+        $users = User::where('adi','=', 'Admin')->get();
+        return $users;
+    }
 }

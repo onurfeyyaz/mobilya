@@ -104,6 +104,7 @@ class ProductsController extends Controller
         return $siparisler;
     }
 
+
     public function confirmOrder(Request $request){
         $status = "success";
         $msg = "Onaylama kaydedildi.";
